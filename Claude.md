@@ -35,11 +35,37 @@ directamente. Siempre delegás.
 
 ## Skills disponibles
 Están en `.agents/skills/`. Cargá solo la relevante para la tarea actual:
-- Frontend/React → `react-best-practices`, `web-design-guidelines`
-- Next.js → `next-best-practices`, `next-cache-components`
-- Agentes → `subagent-driven-development`, `dispatching-parallel-agents`
-- Git → `using-git-worktrees`
+
+### Agentes y metodología
+- Flujo de subagentes → `subagent-driven-development`
+- Agentes en paralelo → `dispatching-parallel-agents`
+- Worktrees → `using-git-worktrees`
+- Planificación → `writing-plans`, `brainstorming`
 - Testing → `test-driven-development`
+
+### Frontend
+- React buenas prácticas → `react-best-practices`
+- Next.js patrones → `next-best-practices`, `next-cache-components`
+- Composición → `composition-patterns`
+- Sistema de diseño → `frontend-design-system`
+- Componentes UI → `ui-component-patterns`
+- Diseño responsive → `responsive-design`
+- Accesibilidad → `web-accessibility`
+- Guidelines visuales → `web-design-guidelines`
+
+### Backend
+- API diseño → `api-design`
+- Node.js patrones → `nodejs-backend-patterns` (si está disponible)
+- Base de datos → `database-schema-design`
+- Autenticación → `authentication-setup`
+- Testing backend → `backend-testing`
+
+### Calidad y seguridad
+- Seguridad → `security-best-practices`
+- Performance → `performance-optimization`
+- Code review → `code-review`
+- Refactoring → `code-refactoring`
+- Debugging → `debugging`
 
 ## Contratos de output
 Cada subagente escribe su resultado en `.agents/contracts/`:
