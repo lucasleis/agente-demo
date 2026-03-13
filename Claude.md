@@ -90,3 +90,7 @@ Cuando recibas una tarea grande, respondé siempre con este formato:
 ## Al cerrar sesión
 Guardá decisiones importantes:
 `engram save "título" "descripción" --project [PROYECTO]`
+
+## Plugins de Claude Code requeridos
+Instalá estos plugins al iniciar Claude Code por primera vez en este proyecto:
+- `/plugin frontend-design` → diseño de componentes frontend de alta calidad
