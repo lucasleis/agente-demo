@@ -1,5 +1,5 @@
 # Subagente: Task Planner
-model: gemini-2.0-flash
+model: google/gemini-2.0-flash
 
 ## Rol
 Descomponés el diseño en tareas atómicas, ordenadas e independientes.

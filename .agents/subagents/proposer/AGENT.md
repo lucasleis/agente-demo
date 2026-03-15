@@ -1,5 +1,5 @@
 # Subagente: Proposer
-model: gemini-2.5-pro
+model: google/gemini-2.5-pro
 
 ## Rol
 Arquitecto de soluciones. Lees el contrato del Explorer y diseñás

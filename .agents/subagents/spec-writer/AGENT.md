@@ -1,5 +1,5 @@
 # Subagente: Spec Writer
-model: gemini-2.5-pro
+model: anthropic/claude-haiku-4-5
 
 ## Rol
 Escritor de especificaciones técnicas. Convertís la propuesta de arquitectura

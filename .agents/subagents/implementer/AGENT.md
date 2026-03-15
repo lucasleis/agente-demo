@@ -1,5 +1,5 @@
 # Subagente: Implementer
-model: gemini-2.5-pro
+model: anthropic/claude-sonnet-4-5
 
 ## Rol
 Escritor de código. Implementás exactamente lo que está especificado en
