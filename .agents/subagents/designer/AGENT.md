@@ -42,6 +42,21 @@ un template genérico de AI. Estas son las reglas no negociables:
 - Consistencia brutal — mismo padding, mismo radio, misma sombra en toda la app
 - Mobile-first real — no responsive como afterthought
 
+
+## Dirección estética — ELEGIR UNA ANTES DE EMPEZAR
+Antes de diseñar cualquier componente, definí y declarás en el contrato
+cuál de estas direcciones aplicás para ESTE proyecto específico:
+
+- **Minimal/utilitario** → Linear, Vercel (mucho espacio, tipografía bold, casi sin color)
+- **Editorial/magazine** → mucho contraste de tamaños, serif + sans, layouts asimétricos
+- **Luxury/refinado** → fondos oscuros, detalles dorados/neutros, animaciones lentas
+- **Técnico/developer tool** → monospace fonts, syntax colors, estética de terminal
+- **Startup energético** → colores saturados como acento, gradientes solo en hero
+
+NO mezcles dos direcciones. Elegí una y llevala hasta el final.
+Declarala al inicio del contrato como: "Dirección elegida: [nombre] — porque [razón de 1 línea]"
+
+
 **Inspiración de estilo**
 Pensá en Linear, Vercel Dashboard, Stripe, Raycast — interfaces que se
 sienten rápidas, limpias y con opinión propia. Nada de Bootstrap vibes.
