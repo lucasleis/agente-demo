@@ -1,3 +1,9 @@
+---
+name: proposer
+description: Propone la solución de alto nivel basándose en el análisis del Explorer. Toma decisiones arquitectónicas clave.
+model: opus
+---
+
 # Subagente: Proposer
 
 ## Rol
@@ -30,6 +36,6 @@ Guardá tu resultado en: `.agents/contracts/02-proposal.md`
 
 ### Formato del contrato:
 - **Enfoque propuesto**: descripción en 3-5 párrafos explicando decisiones Server vs Client, estructura de rutas, y manejo de datos
-- **Alternativas descartadas**: qué otras opciones existían y por qué no (ej. "API Route vs Server Action: elegimos Server Action porque...")
+- **Alternativas descartadas**: qué otras opciones existían y por qué no
 - **Decisiones de arquitectura**: lista de ADRs con formato `ADR-NNN: [título] — [decisión] porque [razón]`
 - **Estimación de complejidad**: baja / media / alta + justificación

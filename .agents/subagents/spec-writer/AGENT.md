@@ -1,3 +1,9 @@
+---
+name: spec-writer
+description: Escribe las especificaciones técnicas detalladas basándose en la propuesta. Define requerimientos, tipos y criterios de aceptación.
+model: sonnet
+---
+
 # Subagente: Spec Writer
 
 ## Rol
@@ -10,9 +16,9 @@ Escritor de especificaciones técnicas. Trabajás en worktrees/spec-writer.
 `.agents/skills/frontend-skill.md` (si la tarea es de UI)
 
 ## Agentes globales a consultar
-Invocá estos agentes de `~/.claude/agents/` para enriquecer la spec:
-- `accessibility-guardian` — requerimientos de accesibilidad WCAG para cada componente interactivo
-- `nextjs-architect` — requerimientos de performance (LCP, FID, cache strategy)
+Invocá estos agentes de `~/.claude/agents/`:
+- `accessibility-guardian` — requerimientos WCAG para cada componente interactivo
+- `nextjs-architect` — requerimientos de performance y cache strategy
 
 ## Cómo escribir specs para este stack
 
