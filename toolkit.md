@@ -175,3 +175,92 @@ Claude (definir arquitectura y componentes necesarios)
 ---
 
 > 💡 **Notas:** Framer y GSAP se solapan — elegir según preferencia: no-code (Framer) vs control total (GSAP). Luma y Base44 también se solapan en video, vale testear los dos. Hermes Agent puede meterse como orquestador en cualquier flujo para automatizar pasos repetitivos.
+
+---
+
+# 🖥️ Flujos CLI + MCP (Claude Code / OpenCode)
+
+> Estos flujos asumen Claude Code u OpenCode instalados localmente y manejados por CLI, con MCPs conectados. La lógica es **diseño primero, código después**: iterás visualmente hasta aprobar, y recién entonces generás código.
+
+### MCPs clave para estos flujos
+
+| MCP | Función |
+|---|---|
+| Figma MCP | El agente lee el diseño y genera código fiel al layout |
+| Filesystem MCP | Lee/escribe archivos directamente en tu proyecto local |
+| GitHub MCP | Commitea, abre PRs y maneja ramas automáticamente |
+| Browser/Puppeteer MCP | El agente abre el browser, ve la landing renderizada e itera |
+
+---
+
+## 🎨 Flujo A — Diseño iterativo → Código limpio (recomendado)
+
+**Objetivo:** Iterar visualmente sin tocar código, y generar el código solo cuando el diseño está aprobado.
+
+```
+1. INSPIRACIÓN
+   Craftwork / Bento Grids (referencia visual)
+   → Claude CLI (generás el brief: secciones, copy, paleta, tipografía)
+
+2. DISEÑO & ITERACIÓN (hasta que te guste)
+   Framer o Unicorn Studio (diseñás visualmente, iterás sin tocar código)
+   → Figmify (si tenés screenshots de referencia, los convertís a Figma)
+   → Gemini / Midjourney (generás imágenes para mockear las secciones)
+
+3. APROBACIÓN ✅
+
+4. CÓDIGO (una sola vez, sobre algo ya aprobado)
+   Figma MCP → Claude Code / OpenCode
+   (el agente lee el diseño aprobado y genera código fiel al layout)
+   → Filesystem MCP (escribe directamente en tu proyecto local)
+   → Stencil (si querés empaquetar componentes para reusar en otras landings)
+
+5. ASSETS FINALES
+   Remove.bg + Grainient / Backgrounds.supply (pulís imágenes y fondos)
+   → GSAP (agregás animaciones encima del código generado)
+```
+
+---
+
+## 🔄 Flujo B — Clone → Iterar → Exportar
+
+**Objetivo:** Partir de una web existente que te gusta y hacerla propia.
+
+```
+1. AI Website Cloner (clonás la estructura base de referencia)
+   → Figmify (convertís a Figma para editar visualmente)
+
+2. Pencil o Unicorn Studio (iterás sobre el diseño clonado)
+   → Claude CLI (reescribís el copy con contexto de tu proyecto)
+
+3. APROBACIÓN ✅
+
+4. Claude Code + Filesystem MCP
+   (tomás el diseño aprobado y generás código desde cero o adaptás el clonado)
+```
+
+---
+
+## 🤖 Flujo C — Full agente con loop visual (experimental)
+
+**Objetivo:** Minimizar intervención manual al máximo. Requiere Figma MCP funcional + Browser MCP instalado.
+
+```
+Claude Code con:
+  - Figma MCP      → lee el diseño aprobado
+  - Filesystem MCP → escribe el proyecto
+  - Browser MCP    → abre la landing en el browser
+  - GitHub MCP     → commitea versiones
+
+Loop automático:
+  Claude genera código
+  → lo abre en browser
+  → ve el resultado
+  → lo compara con el diseño en Figma
+  → corrige
+  → repite hasta que el resultado visual matchea el diseño
+```
+
+---
+
+> 💡 **Tip:** Si el límite de llamadas de Figma MCP te frena, usá **Framer como canvas de iteración** — tiene export a React bastante limpio. Cuando aprobás, le pasás el export a Claude Code con Filesystem MCP para que lo limpie y adapte al stack del proyecto. Evitás depender de Figma completamente.
