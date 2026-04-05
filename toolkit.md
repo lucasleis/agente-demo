@@ -14,6 +14,25 @@
 - Creador de prompts
 - ⚠️ No probado
 
+### Agents Claude Code
+- 🔗 [GitHub](https://github.com/lodetomasi/agents-claude-code)
+- Colección de agentes listos para usar con Claude Code
+- ⚠️ No probado
+
+---
+
+## 🛠️ Claude Code Skills
+
+### UI/UX Pro Max Skill
+- 🔗 [GitHub](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
+- Skill de Claude Code para diseño UI/UX: tokens, componentes, paletas, tipografías y más
+- ⚠️ No probado
+
+### GSAP Skills
+- 🔗 [GitHub](https://github.com/greensock/gsap-skills)
+- Skills oficiales de GSAP para Claude Code: animaciones, ScrollTrigger, plugins y más
+- ⚠️ No probado
+
 ---
 
 ## 🎨 Imagen & Video
@@ -74,6 +93,7 @@
 |---|---|---|
 | [Unicorn Studio](https://www.unicorn.studio/) | Similar a Figma | ⚠️ No probado |
 | [Pencil](https://www.pencil.dev/) | Figma-like con agentes, sin consumo de tokens | ⚠️ No probado |
+| [AI Designer](https://www.aidesigner.ai/) | Diseño UI con IA | ⚠️ No probado |
 
 ---
 
@@ -83,6 +103,7 @@
 |---|---|---|
 | [Craftwork](https://craftwork.design/curated/websites/) | Templates de landings y secciones | ⚠️ No probado |
 | [Bento Grids](https://bentogrids.com/) | Templates bento-style | ⚠️ No probado |
+| [Awesome Design MD](https://github.com/VoltAgent/awesome-design-md) | Colección curada de recursos de diseño en Markdown | ⚠️ No probado |
 
 ---
 
@@ -93,6 +114,8 @@
 | [AI Website Cloner](https://github.com/JCodesMore/ai-website-cloner-template) | Clonador de webs | ⚠️ No probado |
 | [Fontshare](https://fontshare.com/) | Fuentes gratuitas | ⚠️ No probado |
 | [Figmify](https://figmify.ai/) | Conversión imagen → Figma | ⚠️ No probado |
+| [Boneyard](https://github.com/0xGF/boneyard) | Colección de scripts y herramientas misceláneas | ⚠️ No probado |
+| [Paperclip](https://paperclip.ing/) · [GitHub](https://github.com/paperclipai/paperclip) | Herramienta AI para gestión de proyectos y contexto | ⚠️ No probado |
 
 ---
 
