@@ -201,12 +201,6 @@
 - Tunneling localhost gratuito y open-source
 - Alternativa a ngrok con HTTPS automático
 
-### OpenRouter
-- 🔗 [Web](https://openrouter.ai/)
-- API unificada para acceder a 100+ modelos de AI
-- Fallbacks automáticos y pricing optimizado
-- Compatible con Cline, Claude Code y otras herramientas
-
 ### Cline Kanban
 - 🔗 [Web](https://cline.bot/kanban)
 - Kanban para orquestar múltiples coding agents
@@ -230,11 +224,6 @@
 ### Fontshare
 - 🔗 [Web](https://fontshare.com/)
 - Fuentes gratuitas
-- ⚠️ No probado
-
-### Figmify
-- 🔗 [Web](https://figmify.ai/)
-- Conversión imagen → Figma
 - ⚠️ No probado
 
 ### Boneyard
