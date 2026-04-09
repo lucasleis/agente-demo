@@ -2,16 +2,21 @@
 
 ---
 
-## 🤖 AI Agents
+## 🤖 AI Agents & Frameworks
 
 ### Hermes Agent
 - 🔗 [GitHub](https://github.com/nousresearch/hermes-agent) · [Demo](https://hermes-agent.nousresearch.com/)
-- Agente autónomo en tu servidor. Recuerda lo que aprende y mejora con el tiempo.
+- Agente autónomo en tu servidor. Recuerda lo que aprende y mejora con el tiempo
 - Sandboxing incluido
 
-### Prompt Master
-- 🔗 [GitHub](https://github.com/nidhinjs/prompt-master)
-- Creador de prompts
+### Superpowers
+- 🔗 [GitHub](https://github.com/obra/superpowers)
+- Framework de skills agnéticos para desarrollo de software completo: brainstorming → plan → implementación con subagentes
+- ⚠️ No probado
+
+### gstack (Garry Tan)
+- 🔗 [GitHub](https://github.com/garrytan/gstack)
+- Setup completo de Claude Code del CEO de Y Combinator: 23 herramientas especializadas (CEO, Designer, Eng Manager, QA, Security)
 - ⚠️ No probado
 
 ### Agents Claude Code
@@ -21,101 +26,136 @@
 
 ---
 
-## 🛠️ Claude Code Skills
+## 🛠️ Claude Code Tools & Skills
+
+### Claude Code Templates
+- 🔗 [GitHub](https://github.com/davila7/claude-code-templates) · [Web](https://www.aitmpl.com/)
+- CLI tool con 1000+ componentes: agentes, comandos, skills, MCPs, hooks, settings y templates
+- ⚠️ No probado
+
+### Claude Token Efficient
+- 🔗 [GitHub](https://github.com/drona23/claude-token-efficient)
+- Archivo CLAUDE.md que reduce verbosidad en ~63% y optimiza uso de tokens
+- ⚠️ No probado
 
 ### UI/UX Pro Max Skill
 - 🔗 [GitHub](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
-- Skill de Claude Code para diseño UI/UX: tokens, componentes, paletas, tipografías y más
+- Skill de Claude Code para diseño UI/UX: tokens, componentes, paletas, tipografías
 - ⚠️ No probado
 
 ### GSAP Skills
 - 🔗 [GitHub](https://github.com/greensock/gsap-skills)
-- Skills oficiales de GSAP para Claude Code: animaciones, ScrollTrigger, plugins y más
+- Skills oficiales de GSAP para Claude Code: animaciones, ScrollTrigger, plugins
+- ⚠️ No probado
+
+### Remotion Skills
+- 🔗 [Docs](https://www.remotion.dev/docs/ai/claude-code)
+- Creación de videos programáticos con Claude Code usando React + Remotion
 - ⚠️ No probado
 
 ---
 
-## 🎨 Imagen & Video
+## 🎨 Imagen, Video & Assets
+
+### Pixa (antes Pixelcut)
+- 🔗 [Web](https://www.pixa.com/) · [MCP for Claude](https://www.pixa.com/claude)
+- Editor de fotos AI + MCP server para Claude: remove background, upscale, generate images
+- ⚠️ No probado
 
 | Herramienta | Descripción | Estado |
 |---|---|---|
 | [Midjourney](https://midjourney.com/) | Generador de imágenes | 💰 No probado |
 | [Gemini Image Gen](https://gemini.google.com/) | Creador de imágenes | ⚠️ No probado |
-| [Base44](https://base44.com/) | Launch videos | ⚠️ No probado |
-| [Luma](https://app.lumalabs.ai/) | Imagen, video y audio con agentes. En versión free anda medio medio. | 💰 No probado |
-
----
-
-## 🌄 Backgrounds & Assets
-
-| Herramienta | Descripción | Estado |
-|---|---|---|
+| [Luma](https://app.lumalabs.ai/) | Imagen, video y audio con agentes | 💰 No probado |
+| [Motion](https://github.com/motiondivision/motion) | Motion library para React, Vue, Svelte, etc. | ⚠️ No probado |
 | [Grainient](https://grainient.supply/) | Backgrounds con grain | ⚠️ No probado |
 | [Backgrounds.supply](https://backgrounds.supply) | Backgrounds | — |
 | [Remove.bg](https://www.remove.bg/) | Remover fondo de imágenes | ⚠️ No probado |
 
 ---
 
-## 🧊 Elementos 3D
+## 🧊 Elementos 3D & Animación
 
 | Herramienta | Descripción | Estado |
 |---|---|---|
 | [Omma](https://omma.build/) | Elementos 3D caricaturescos | ⚠️ No probado |
 | [Kling AI](https://klingai.com/) | Animar objetos | 💰 No probado |
 | [Morflax](https://studio.morflax.com/) | Subir elementos 3D y generar animaciones | ✅ Probado |
-| [Blender](https://www.blender.org/) | Modeling 3D | ⚠️ No probado |
+| [Blender](https://www.blender.org/) | Modeling 3D open source | ⚠️ No probado |
 | [Lusion](https://lusion.co/) | Elementos 3D y animaciones | ⚠️ No probado |
-
----
-
-## ✨ Animación
-
-| Herramienta | Descripción | Estado |
-|---|---|---|
-| [GSAP](https://gsap.com/) | Librería JS para animaciones profesionales. Usar después de Figma. | ⚠️ No probado |
+| [GSAP](https://gsap.com/) | Librería JS para animaciones profesionales | ⚠️ No probado |
 | [Framer](https://www.framer.com/) | Animar diseños y darles vida | ⚠️ No probado |
 
 ---
 
-## 🚀 Landing Creators
+## 🚀 Landing & App Builders
 
 | Herramienta | Descripción | Estado |
 |---|---|---|
-| [Lovable](https://lovable.dev/) | Crea landings | ⚠️ No probado |
+| [Aura.build](https://www.aura.build/) | AI landing page builder: prompt → HTML/Figma exportable | ⚠️ No probado |
+| [Shipper.now](https://shipper.now/) | Agentic AI builder: idea → full-stack app deployed en minutos | ⚠️ No probado |
+| [Lovable](https://lovable.dev/) | Crea landings con AI | ⚠️ No probado |
 | [Lander Studio](https://lander.studio/) | Crea landings · [Logo animations](https://lander.studio/all-logo-animations) | 💰 No probado |
-| [Stencil](https://stenciljs.com/) | Compilador de Web Components reutilizables, framework-agnostic | ⚠️ No probado |
 
 ---
 
-## 🖌️ Design Tools (Figma-like)
+## 🖌️ Design Tools & UI Kits
 
 | Herramienta | Descripción | Estado |
 |---|---|---|
 | [Unicorn Studio](https://www.unicorn.studio/) | Similar a Figma | ⚠️ No probado |
 | [Pencil](https://www.pencil.dev/) | Figma-like con agentes, sin consumo de tokens | ⚠️ No probado |
 | [AI Designer](https://www.aidesigner.ai/) | Diseño UI con IA | ⚠️ No probado |
+| [AI Workflow Kit](https://github.com/bezael/ai-workflow-kit) | Kit de workflows para diseño con AI | ⚠️ No probado |
+| [Vibeyard](https://github.com/elirantutia/vibeyard) | Tool para capturar y aplicar vibes de diseño | ⚠️ No probado |
+| [Pixel Perfect](https://github.com/vansh-nagar/Pixel-Perfect) | Tool para pixel-perfect design | ⚠️ No probado |
+| [Style Stealer](https://github.com/arjunkshah/style-stealer) | Extrae y replica estilos de sitios web | ⚠️ No probado |
 
 ---
 
-## 📐 Templates & Inspiración
+## 📐 Templates & Resources
 
 | Herramienta | Descripción | Estado |
 |---|---|---|
 | [Craftwork](https://craftwork.design/curated/websites/) | Templates de landings y secciones | ⚠️ No probado |
 | [Bento Grids](https://bentogrids.com/) | Templates bento-style | ⚠️ No probado |
 | [Awesome Design MD](https://github.com/VoltAgent/awesome-design-md) | Colección curada de recursos de diseño en Markdown | ⚠️ No probado |
+| [Launchpad](https://github.com/trycua/launchpad) | Templates y boilerplates | ⚠️ No probado |
 
 ---
 
-## 🔧 Utilidades
+## 🔧 Developer Tools & Utilities
 
+### Data & APIs
 | Herramienta | Descripción | Estado |
 |---|---|---|
-| [AI Website Cloner](https://github.com/JCodesMore/ai-website-cloner-template) | Clonador de webs | ⚠️ No probado |
-| [Fontshare](https://fontshare.com/) | Fuentes gratuitas | ⚠️ No probado |
+| [Context.dev](https://www.context.dev/) | API para web scraping, brand intelligence y data extraction | ⚠️ No probado |
+| [OpenRouter](https://openrouter.ai/) | Unified API para múltiples LLMs | ⚠️ No probado |
+
+### DevOps & Infrastructure
+| Herramienta | Descripción | Estado |
+|---|---|---|
+| [Tunnelmole](https://tunnelmole.com/) | Alternativa open source a ngrok para tunneling | ⚠️ No probado |
+| [Web-Check](https://web-check.xyz/) | Herramienta all-in-one para análisis de sitios web | ⚠️ No probado |
+
+### Misc
+| Herramienta | Descripción | Estado |
+|---|---|---|
+| [Stencil](https://stenciljs.com/) | Compilador de Web Components reutilizables | ⚠️ No probado |
+| [Fontshare](https://fontshare.com/) | Fuentes gratuitas de calidad | ⚠️ No probado |
 | [Figmify](https://figmify.ai/) | Conversión imagen → Figma | ⚠️ No probado |
 | [Boneyard](https://github.com/0xGF/boneyard) | Colección de scripts y herramientas misceláneas | ⚠️ No probado |
 | [Paperclip](https://paperclip.ing/) · [GitHub](https://github.com/paperclipai/paperclip) | Herramienta AI para gestión de proyectos y contexto | ⚠️ No probado |
+| [Nanika](https://github.com/joeyhipolito/nanika) | Tool para desarrollo con AI | ⚠️ No probado |
+| [Career Ops](https://github.com/santifer/career-ops) | Herramienta para gestión de carrera | ⚠️ No probado |
+
+---
+
+## 🎯 Productivity & Workflows
+
+| Herramienta | Descripción | Estado |
+|---|---|---|
+| [Cline Kanban](https://cline.bot/kanban) | Kanban board integrado para Claude Code | ⚠️ No probado |
 
 ---
 
@@ -123,89 +163,7 @@
 
 ---
 
-# 🔁 Flujos de Trabajo
-
----
-
-## 🌐 Flujo 1 — Landing completa desde cero (rápido)
-**Objetivo:** Lanzar una landing funcional y visualmente potente en poco tiempo.
-
-```
-Claude (copy + estructura)
-  → Craftwork / Bento Grids (inspiración y template base)
-  → Lovable (generar la landing con código)
-  → Gemini Image Gen / Midjourney (imágenes hero y secciones)
-  → Remove.bg (limpiar fondos de assets)
-  → Grainient / Backgrounds.supply (background final)
-  → Fontshare (tipografía)
-```
-
----
-
-## 🎬 Flujo 2 — Landing con video hero o demo (impacto visual máximo)
-**Objetivo:** Landing con video de producto o animación como pieza central.
-
-```
-Claude (guión y concepto del video)
-  → Gemini Image Gen (imágenes base / storyboard)
-  → Luma o Base44 (generar el video/launch video)
-  → Lovable (integrar en la landing)
-  → GSAP o Framer (scroll animations, transiciones)
-```
-
----
-
-## 🧊 Flujo 3 — Landing premium con elementos 3D
-**Objetivo:** Landing de alto impacto con objetos 3D animados.
-
-```
-Blender (modelar el elemento 3D)
-  → Morflax (generar animación del modelo)
-  → Kling AI (animar objetos si no tenés el modelo)
-  → Unicorn Studio o Pencil (integrar 3D en el diseño)
-  → GSAP (animaciones al hacer scroll)
-  → Stencil (empaquetar como Web Component reutilizable)
-  → Lovable o Lander Studio (armar la landing final)
-```
-
----
-
-## 🔄 Flujo 4 — Clonar y personalizar una web existente
-**Objetivo:** Partir de algo que ya funciona y hacerlo propio rápido.
-
-```
-AI Website Cloner (clonar estructura base)
-  → Figmify (convertir screenshots a Figma para editar)
-  → Pencil o Unicorn Studio (editar el diseño)
-  → Claude (reescribir copy y adaptar contenido)
-  → Midjourney / Gemini (reemplazar imágenes genéricas)
-  → Remove.bg + Grainient (pulir assets)
-```
-
----
-
-## ⚙️ Flujo 5 — Sistema de componentes escalable (para múltiples landings)
-**Objetivo:** No empezar de cero cada vez, construir una librería reutilizable.
-
-```
-Claude (definir arquitectura y componentes necesarios)
-  → Pencil (diseñar los componentes visualmente)
-  → Stencil (compilar como Web Components framework-agnostic)
-  → Fontshare + Grainient (tokens de diseño: fuentes y fondos)
-  → Lovable (armar landings nuevas tirando de la librería)
-```
-
----
-
-> 💡 **Notas:** Framer y GSAP se solapan — elegir según preferencia: no-code (Framer) vs control total (GSAP). Luma y Base44 también se solapan en video, vale testear los dos. Hermes Agent puede meterse como orquestador en cualquier flujo para automatizar pasos repetitivos.
-
----
-
-# 🖥️ Flujos CLI + MCP (Claude Code / OpenCode)
-
-> Estos flujos asumen Claude Code u OpenCode instalados localmente y manejados por CLI, con MCPs conectados. La lógica es **diseño primero, código después**: iterás visualmente hasta aprobar, y recién entonces generás código.
-
-### MCPs clave para estos flujos
+## 📚 MCPs clave para estos flujos
 
 | MCP | Función |
 |---|---|
@@ -215,75 +173,3 @@ Claude (definir arquitectura y componentes necesarios)
 | Browser/Puppeteer MCP | El agente abre el browser, ve la landing renderizada e itera |
 
 ---
-
-## 🎨 Flujo A — Diseño iterativo → Código limpio (recomendado)
-
-**Objetivo:** Iterar visualmente sin tocar código, y generar el código solo cuando el diseño está aprobado.
-
-```
-1. INSPIRACIÓN
-   Craftwork / Bento Grids (referencia visual)
-   → Claude CLI (generás el brief: secciones, copy, paleta, tipografía)
-
-2. DISEÑO & ITERACIÓN (hasta que te guste)
-   Framer o Unicorn Studio (diseñás visualmente, iterás sin tocar código)
-   → Figmify (si tenés screenshots de referencia, los convertís a Figma)
-   → Gemini / Midjourney (generás imágenes para mockear las secciones)
-
-3. APROBACIÓN ✅
-
-4. CÓDIGO (una sola vez, sobre algo ya aprobado)
-   Figma MCP → Claude Code / OpenCode
-   (el agente lee el diseño aprobado y genera código fiel al layout)
-   → Filesystem MCP (escribe directamente en tu proyecto local)
-   → Stencil (si querés empaquetar componentes para reusar en otras landings)
-
-5. ASSETS FINALES
-   Remove.bg + Grainient / Backgrounds.supply (pulís imágenes y fondos)
-   → GSAP (agregás animaciones encima del código generado)
-```
-
----
-
-## 🔄 Flujo B — Clone → Iterar → Exportar
-
-**Objetivo:** Partir de una web existente que te gusta y hacerla propia.
-
-```
-1. AI Website Cloner (clonás la estructura base de referencia)
-   → Figmify (convertís a Figma para editar visualmente)
-
-2. Pencil o Unicorn Studio (iterás sobre el diseño clonado)
-   → Claude CLI (reescribís el copy con contexto de tu proyecto)
-
-3. APROBACIÓN ✅
-
-4. Claude Code + Filesystem MCP
-   (tomás el diseño aprobado y generás código desde cero o adaptás el clonado)
-```
-
----
-
-## 🤖 Flujo C — Full agente con loop visual (experimental)
-
-**Objetivo:** Minimizar intervención manual al máximo. Requiere Figma MCP funcional + Browser MCP instalado.
-
-```
-Claude Code con:
-  - Figma MCP      → lee el diseño aprobado
-  - Filesystem MCP → escribe el proyecto
-  - Browser MCP    → abre la landing en el browser
-  - GitHub MCP     → commitea versiones
-
-Loop automático:
-  Claude genera código
-  → lo abre en browser
-  → ve el resultado
-  → lo compara con el diseño en Figma
-  → corrige
-  → repite hasta que el resultado visual matchea el diseño
-```
-
----
-
-> 💡 **Tip:** Si el límite de llamadas de Figma MCP te frena, usá **Framer como canvas de iteración** — tiene export a React bastante limpio. Cuando aprobás, le pasás el export a Claude Code con Filesystem MCP para que lo limpie y adapte al stack del proyecto. Evitás depender de Figma completamente.
