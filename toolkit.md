@@ -2,21 +2,16 @@
 
 ---
 
-## 🤖 AI Agents & Frameworks
+## 🤖 AI Agents & Agentic Systems
 
 ### Hermes Agent
 - 🔗 [GitHub](https://github.com/nousresearch/hermes-agent) · [Demo](https://hermes-agent.nousresearch.com/)
 - Agente autónomo en tu servidor. Recuerda lo que aprende y mejora con el tiempo
 - Sandboxing incluido
 
-### Superpowers
-- 🔗 [GitHub](https://github.com/obra/superpowers)
-- Framework de skills agnéticos para desarrollo de software completo: brainstorming → plan → implementación con subagentes
-- ⚠️ No probado
-
-### gstack (Garry Tan)
-- 🔗 [GitHub](https://github.com/garrytan/gstack)
-- Setup completo de Claude Code del CEO de Y Combinator: 23 herramientas especializadas (CEO, Designer, Eng Manager, QA, Security)
+### Prompt Master  
+- 🔗 [GitHub](https://github.com/nidhinjs/prompt-master)
+- Creador de prompts optimizados para cualquier herramienta AI
 - ⚠️ No probado
 
 ### Agents Claude Code
@@ -24,138 +19,238 @@
 - Colección de agentes listos para usar con Claude Code
 - ⚠️ No probado
 
+### Nanika
+- 🔗 [GitHub](https://github.com/joeyhipolito/nanika)
+- Sistema de agentes AI para automatización
+- ⚠️ No probado
+
 ---
 
-## 🛠️ Claude Code Tools & Skills
+## 🛠️ Claude Code Skills & Plugins
 
 ### Claude Code Templates
 - 🔗 [GitHub](https://github.com/davila7/claude-code-templates) · [Web](https://www.aitmpl.com/)
-- CLI tool con 1000+ componentes: agentes, comandos, skills, MCPs, hooks, settings y templates
-- ⚠️ No probado
+- CLI con 1000+ componentes: agentes, comandos, skills, MCPs, settings y templates
+- Browser interactivo para explorar e instalar componentes
+- Dashboard de analytics en tiempo real
 
-### Claude Token Efficient
-- 🔗 [GitHub](https://github.com/drona23/claude-token-efficient)
-- Archivo CLAUDE.md que reduce verbosidad en ~63% y optimiza uso de tokens
-- ⚠️ No probado
+### Superpowers
+- 🔗 [GitHub](https://github.com/obra/superpowers)
+- Framework de skills para agentes: brainstorming, planning, debugging, testing, code review
+- Metodología de desarrollo TDD/YAGNI integrada
+- Compatible con Claude Code, Codex, Kiro y Factory
+
+### GStack (Garry Tan)
+- 🔗 [GitHub](https://github.com/garrytan/gstack)
+- Setup de Garry Tan (YC CEO): 23 tools como CEO, Designer, Eng Manager, QA
+- Incluye `/office-hours`, `/plan-ceo-review`, `/review`, `/ship`, browser automation
+- Auto-update, compatible con múltiples agentes
 
 ### UI/UX Pro Max Skill
 - 🔗 [GitHub](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
-- Skill de Claude Code para diseño UI/UX: tokens, componentes, paletas, tipografías
+- Skill para diseño UI/UX: tokens, componentes, paletas, tipografías
 - ⚠️ No probado
 
 ### GSAP Skills
 - 🔗 [GitHub](https://github.com/greensock/gsap-skills)
-- Skills oficiales de GSAP para Claude Code: animaciones, ScrollTrigger, plugins
+- Skills oficiales de GSAP: animaciones, ScrollTrigger, plugins
 - ⚠️ No probado
 
-### Remotion Skills
-- 🔗 [Docs](https://www.remotion.dev/docs/ai/claude-code)
-- Creación de videos programáticos con Claude Code usando React + Remotion
+### Token Efficiency
+- 🔗 [GitHub](https://github.com/drona23/claude-token-efficient)
+- CLAUDE.md para reducir verbosidad y optimizar uso de tokens
+- Reduce output ~63% en workflows pesados
+- ⚠️ Solo útil en sesiones largas con alto volumen de output
+
+### Career Ops
+- 🔗 [GitHub](https://github.com/santifer/career-ops)
+- Herramientas para gestión de carrera profesional
+- ⚠️ No probado
+
+### AI Workflow Kit
+- 🔗 [GitHub](https://github.com/bezael/ai-workflow-kit)
+- Kit de workflows para desarrollo con AI
 - ⚠️ No probado
 
 ---
 
-## 🎨 Imagen, Video & Assets
+## 🎨 Imagen, Video & Animación
 
-### Pixa (antes Pixelcut)
-- 🔗 [Web](https://www.pixa.com/) · [MCP for Claude](https://www.pixa.com/claude)
-- Editor de fotos AI + MCP server para Claude: remove background, upscale, generate images
+### Pixa (ex-Pixelcut)
+- 🔗 [Web](https://www.pixa.com/) · [Claude Integration](https://www.pixa.com/claude)
+- Editor AI: background removal, upscale, image/video gen, object erasing
+- Integración con Claude via MCP
 - ⚠️ No probado
+
+### Luma
+- 🔗 [Web](https://app.lumalabs.ai/)
+- Imagen, video y audio con agentes. Versión free limitada
+- 💰 No probado
+
+### Remotion
+- 🔗 [Web](https://www.remotion.dev/) · [Claude Code Docs](https://www.remotion.dev/docs/ai/claude-code)
+- Framework para crear videos programáticamente con React
+- Skills oficiales para Claude Code incluidos
+- Requiere licencia empresarial para 3+ empleados
+
+### Base44
+- 🔗 [Web](https://base44.com/)
+- Launch videos
+- ⚠️ No probado
+
+### Midjourney
+- 🔗 [Web](https://midjourney.com/)
+- Generador de imágenes
+- 💰 No probado
+
+### Gemini Image Gen
+- 🔗 [Web](https://gemini.google.com/)
+- Creador de imágenes de Google
+- ⚠️ No probado
+
+---
+
+## 🌄 Backgrounds & Assets
 
 | Herramienta | Descripción | Estado |
 |---|---|---|
-| [Midjourney](https://midjourney.com/) | Generador de imágenes | 💰 No probado |
-| [Gemini Image Gen](https://gemini.google.com/) | Creador de imágenes | ⚠️ No probado |
-| [Luma](https://app.lumalabs.ai/) | Imagen, video y audio con agentes | 💰 No probado |
-| [Motion](https://github.com/motiondivision/motion) | Motion library para React, Vue, Svelte, etc. | ⚠️ No probado |
 | [Grainient](https://grainient.supply/) | Backgrounds con grain | ⚠️ No probado |
 | [Backgrounds.supply](https://backgrounds.supply) | Backgrounds | — |
 | [Remove.bg](https://www.remove.bg/) | Remover fondo de imágenes | ⚠️ No probado |
 
 ---
 
-## 🧊 Elementos 3D & Animación
+## 🧊 Elementos 3D
 
 | Herramienta | Descripción | Estado |
 |---|---|---|
 | [Omma](https://omma.build/) | Elementos 3D caricaturescos | ⚠️ No probado |
 | [Kling AI](https://klingai.com/) | Animar objetos | 💰 No probado |
 | [Morflax](https://studio.morflax.com/) | Subir elementos 3D y generar animaciones | ✅ Probado |
-| [Blender](https://www.blender.org/) | Modeling 3D open source | ⚠️ No probado |
+| [Blender](https://www.blender.org/) | Modeling 3D | ⚠️ No probado |
 | [Lusion](https://lusion.co/) | Elementos 3D y animaciones | ⚠️ No probado |
-| [GSAP](https://gsap.com/) | Librería JS para animaciones profesionales | ⚠️ No probado |
-| [Framer](https://www.framer.com/) | Animar diseños y darles vida | ⚠️ No probado |
 
 ---
 
-## 🚀 Landing & App Builders
+## ✨ Animación
+
+### Motion
+- 🔗 [GitHub](https://github.com/motiondivision/motion)
+- Librería moderna de animación para React y JavaScript
+- Motor híbrido: JavaScript + APIs nativas del browser
+- Usada en Cursor homepage
+
+### GSAP
+- 🔗 [Web](https://gsap.com/)
+- Librería JS para animaciones profesionales. Usar después de Figma
+- ⚠️ No probado
+
+### Framer
+- 🔗 [Web](https://www.framer.com/)
+- Animar diseños y darles vida
+- ⚠️ No probado
+
+---
+
+## 🚀 Landing Creators & Page Builders
 
 | Herramienta | Descripción | Estado |
 |---|---|---|
-| [Aura.build](https://www.aura.build/) | AI landing page builder: prompt → HTML/Figma exportable | ⚠️ No probado |
-| [Shipper.now](https://shipper.now/) | Agentic AI builder: idea → full-stack app deployed en minutos | ⚠️ No probado |
-| [Lovable](https://lovable.dev/) | Crea landings con AI | ⚠️ No probado |
+| [Lovable](https://lovable.dev/) | Crea landings | ⚠️ No probado |
 | [Lander Studio](https://lander.studio/) | Crea landings · [Logo animations](https://lander.studio/all-logo-animations) | 💰 No probado |
+| [Stencil](https://stenciljs.com/) | Compilador de Web Components reutilizables, framework-agnostic | ⚠️ No probado |
+| [Launchpad (Cua)](https://github.com/trycua/launchpad) | Generador de landing pages | ⚠️ No probado |
 
 ---
 
-## 🖌️ Design Tools & UI Kits
+## 🖌️ Design Tools
 
 | Herramienta | Descripción | Estado |
 |---|---|---|
 | [Unicorn Studio](https://www.unicorn.studio/) | Similar a Figma | ⚠️ No probado |
 | [Pencil](https://www.pencil.dev/) | Figma-like con agentes, sin consumo de tokens | ⚠️ No probado |
 | [AI Designer](https://www.aidesigner.ai/) | Diseño UI con IA | ⚠️ No probado |
-| [AI Workflow Kit](https://github.com/bezael/ai-workflow-kit) | Kit de workflows para diseño con AI | ⚠️ No probado |
-| [Vibeyard](https://github.com/elirantutia/vibeyard) | Tool para capturar y aplicar vibes de diseño | ⚠️ No probado |
-| [Pixel Perfect](https://github.com/vansh-nagar/Pixel-Perfect) | Tool para pixel-perfect design | ⚠️ No probado |
-| [Style Stealer](https://github.com/arjunkshah/style-stealer) | Extrae y replica estilos de sitios web | ⚠️ No probado |
+| [Vibeyard](https://github.com/elirantutia/vibeyard) | Herramienta de diseño | ⚠️ No probado |
 
 ---
 
-## 📐 Templates & Resources
+## 📐 Templates & Inspiración
 
 | Herramienta | Descripción | Estado |
 |---|---|---|
 | [Craftwork](https://craftwork.design/curated/websites/) | Templates de landings y secciones | ⚠️ No probado |
 | [Bento Grids](https://bentogrids.com/) | Templates bento-style | ⚠️ No probado |
 | [Awesome Design MD](https://github.com/VoltAgent/awesome-design-md) | Colección curada de recursos de diseño en Markdown | ⚠️ No probado |
-| [Launchpad](https://github.com/trycua/launchpad) | Templates y boilerplates | ⚠️ No probado |
 
 ---
 
-## 🔧 Developer Tools & Utilities
+## 🔧 Utilidades & Herramientas Dev
 
-### Data & APIs
-| Herramienta | Descripción | Estado |
-|---|---|---|
-| [Context.dev](https://www.context.dev/) | API para web scraping, brand intelligence y data extraction | ⚠️ No probado |
-| [OpenRouter](https://openrouter.ai/) | Unified API para múltiples LLMs | ⚠️ No probado |
+### AI Website Cloner
+- 🔗 [GitHub](https://github.com/JCodesMore/ai-website-cloner-template)
+- Clonador de webs con AI
+- ⚠️ No probado
 
-### DevOps & Infrastructure
-| Herramienta | Descripción | Estado |
-|---|---|---|
-| [Tunnelmole](https://tunnelmole.com/) | Alternativa open source a ngrok para tunneling | ⚠️ No probado |
-| [Web-Check](https://web-check.xyz/) | Herramienta all-in-one para análisis de sitios web | ⚠️ No probado |
+### Context.dev (ex-Brand.dev)
+- 🔗 [Web](https://www.context.dev)
+- API unificada para web scraping, brand intelligence y extracción de datos con AI
+- Obtén markdown, screenshots, logos, colores y datos estructurados de cualquier sitio
 
-### Misc
-| Herramienta | Descripción | Estado |
-|---|---|---|
-| [Stencil](https://stenciljs.com/) | Compilador de Web Components reutilizables | ⚠️ No probado |
-| [Fontshare](https://fontshare.com/) | Fuentes gratuitas de calidad | ⚠️ No probado |
-| [Figmify](https://figmify.ai/) | Conversión imagen → Figma | ⚠️ No probado |
-| [Boneyard](https://github.com/0xGF/boneyard) | Colección de scripts y herramientas misceláneas | ⚠️ No probado |
-| [Paperclip](https://paperclip.ing/) · [GitHub](https://github.com/paperclipai/paperclip) | Herramienta AI para gestión de proyectos y contexto | ⚠️ No probado |
-| [Nanika](https://github.com/joeyhipolito/nanika) | Tool para desarrollo con AI | ⚠️ No probado |
-| [Career Ops](https://github.com/santifer/career-ops) | Herramienta para gestión de carrera | ⚠️ No probado |
+### Tunnelmole
+- 🔗 [Web](https://tunnelmole.com/) · [GitHub](https://github.com/robbie-cahill/tunnelmole-client)
+- Tunneling localhost gratuito y open-source
+- Alternativa a ngrok con HTTPS automático
 
----
+### OpenRouter
+- 🔗 [Web](https://openrouter.ai/)
+- API unificada para acceder a 100+ modelos de AI
+- Fallbacks automáticos y pricing optimizado
+- Compatible con Cline, Claude Code y otras herramientas
 
-## 🎯 Productivity & Workflows
+### Cline Kanban
+- 🔗 [Web](https://cline.bot/kanban)
+- Kanban para orquestar múltiples coding agents
+- Compatible con Claude Code, Codex, Cline
 
-| Herramienta | Descripción | Estado |
-|---|---|---|
-| [Cline Kanban](https://cline.bot/kanban) | Kanban board integrado para Claude Code | ⚠️ No probado |
+### Web-Check
+- 🔗 [Web](https://web-check.xyz/)
+- Análisis y chequeo de sitios web
+- ⚠️ No probado
+
+### Pixel Perfect
+- 🔗 [GitHub](https://github.com/vansh-nagar/Pixel-Perfect)
+- Herramienta para desarrollo pixel-perfect
+- ⚠️ No probado
+
+### Style Stealer
+- 🔗 [GitHub](https://github.com/arjunkshah/style-stealer)
+- Extractor de estilos de sitios web
+- ⚠️ No probado
+
+### Fontshare
+- 🔗 [Web](https://fontshare.com/)
+- Fuentes gratuitas
+- ⚠️ No probado
+
+### Figmify
+- 🔗 [Web](https://figmify.ai/)
+- Conversión imagen → Figma
+- ⚠️ No probado
+
+### Boneyard
+- 🔗 [GitHub](https://github.com/0xGF/boneyard)
+- Colección de scripts y herramientas misceláneas
+- ⚠️ No probado
+
+### Paperclip
+- 🔗 [Web](https://paperclip.ing/) · [GitHub](https://github.com/paperclipai/paperclip)
+- Herramienta AI para gestión de proyectos y contexto
+- ⚠️ No probado
+
+### Shipper
+- 🔗 [Web](https://www.aura.build/)
+- Herramienta de deployment/shipping
+- ⚠️ Link unclear (shipper.now no funciona)
 
 ---
 
@@ -163,7 +258,7 @@
 
 ---
 
-## 📚 MCPs clave para estos flujos
+### MCPs clave para estos flujos
 
 | MCP | Función |
 |---|---|
@@ -171,5 +266,3 @@
 | Filesystem MCP | Lee/escribe archivos directamente en tu proyecto local |
 | GitHub MCP | Commitea, abre PRs y maneja ramas automáticamente |
 | Browser/Puppeteer MCP | El agente abre el browser, ve la landing renderizada e itera |
-
----
