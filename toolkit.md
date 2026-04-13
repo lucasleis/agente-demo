@@ -4,6 +4,30 @@
 
 ## 🤖 AI Agents & Agentic Systems
 
+### Claude-Mem
+- 🔗 [GitHub](https://github.com/thedotmack/claude-mem) · [Docs](https://docs.claude-mem.ai)
+- Plugin de Claude Code que captura automáticamente todo lo que Claude hace durante sesiones
+- Comprime observaciones con AI (usando Claude Agent SDK) e inyecta contexto relevante en futuras sesiones
+- Memoria persistente entre sesiones, búsqueda semántica con SQLite + FTS5
+- Worker service en puerto 37777, skills incluidos (/mem-search, /make-plan)
+- Instalación: `/plugin marketplace add thedotmack/claude-mem && /plugin install claude-mem`
+
+### Engram
+- 🔗 [GitHub](https://github.com/Gentleman-Programming/engram)
+- Sistema de memoria persistente para agentes AI. Binario Go con SQLite + FTS5
+- Agente-agnóstico: funciona con Claude Code, OpenCode, Gemini CLI, Codex, VS Code, Cursor, Windsurf
+- MCP server, HTTP API, CLI y TUI. Un solo binario, un solo archivo SQLite
+- Sincronización Git para compartir memoria entre máquinas
+- Instalación: `brew install gentleman-programming/tap/engram` o releases de GitHub
+
+### Autoskills (Midudev)
+- 🔗 [GitHub](https://github.com/midudev/autoskills)
+- Escanea tu proyecto, detecta tecnologías y auto-instala skills curados para agentes AI
+- Detecta 50+ tecnologías: React, Next.js, Vue, Node.js, Go, Supabase, Prisma, Flutter, etc.
+- Funciona con Cursor, Claude Code y otros agentes
+- Escribe CLAUDE.md automático con resumen de skills instalados
+- Instalación: `npx autoskills`
+
 ### Hermes Agent
 - 🔗 [GitHub](https://github.com/nousresearch/hermes-agent) · [Demo](https://hermes-agent.nousresearch.com/)
 - Agente autónomo en tu servidor. Recuerda lo que aprende y mejora con el tiempo
@@ -14,7 +38,7 @@
 - Creador de prompts optimizados para cualquier herramienta AI
 - ⚠️ No probado
 
-### Agents Claude Code
+### Agents Claude Code (lodetomasi)
 - 🔗 [GitHub](https://github.com/lodetomasi/agents-claude-code)
 - Colección de agentes listos para usar con Claude Code
 - ⚠️ No probado
@@ -24,9 +48,30 @@
 - Sistema de agentes AI para automatización
 - ⚠️ No probado
 
+### wshobson/agents
+- 🔗 [GitHub](https://github.com/wshobson/agents) · [Marketplace](https://claudemarketplaces.com/plugins/wshobson-agents)
+- 77 plugins enfocados con 182 agentes especializados, 149 skills y 96 comandos
+- 16 orquestadores de workflow multi-agente para operaciones complejas
+- Marketplace: `/plugin marketplace add wshobson/agents`
+- Colecciones: claude-code-essentials, full-stack-development, security-hardening, data-ml-pipeline, infrastructure-devops
+
 ---
 
 ## 🛠️ Claude Code Skills & Plugins
+
+### Claude Code Plugins (Anthropic Oficial)
+- 🔗 [GitHub Repo](https://github.com/anthropics/claude-code/tree/main/plugins)
+- 🔗 [Official Marketplace](https://github.com/anthropics/claude-plugins-official)
+- Plugins oficiales de Anthropic: agent-sdk-dev, code-review, commit-commands, plugin-dev, pr-review-toolkit
+- Instalación: `/plugin install {plugin-name}@claude-plugins-official`
+- Incluye herramientas para desarrollo SDK, code review automatizado, comandos git, y más
+
+### Vercel Agent Skills
+- 🔗 [GitHub](https://github.com/vercel-labs/agent-skills) · [Docs](https://vercel.com/docs/agent-resources/skills)
+- Colección oficial de Vercel: React best practices, frontend design, React Native, Vercel AI SDK
+- Skills CLI (npx skills): gestor de paquetes open-source para el ecosistema de agent skills
+- Instalación: `npx skills add vercel-labs/agent-skills`
+- Compatible con 18+ agentes: Claude Code, GitHub Copilot, Cursor, Cline, etc.
 
 ### Claude Code Templates
 - 🔗 [GitHub](https://github.com/davila7/claude-code-templates) · [Web](https://www.aitmpl.com/)
@@ -45,6 +90,13 @@
 - Setup de Garry Tan (YC CEO): 23 tools como CEO, Designer, Eng Manager, QA
 - Incluye `/office-hours`, `/plan-ceo-review`, `/review`, `/ship`, browser automation
 - Auto-update, compatible con múltiples agentes
+
+### Claude Code Best Practice (shanraisshan)
+- 🔗 [GitHub](https://github.com/shanraisshan/claude-code-best-practice)
+- Repositorio de best practices para configuración Claude Code
+- Patrones demostrativos para skills, subagents, hooks y commands
+- Incluye tips de Boris Cherny (creador de Claude Code)
+- Guías de: Claude Skills, Power-Ups, Settings, Subagents, Commands
 
 ### UI/UX Pro Max Skill
 - 🔗 [GitHub](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
@@ -71,6 +123,18 @@
 - 🔗 [GitHub](https://github.com/bezael/ai-workflow-kit)
 - Kit de workflows para desarrollo con AI
 - ⚠️ No probado
+
+---
+
+## 🔬 Research & Academia
+
+### Feynman
+- 🔗 [GitHub](https://github.com/getcompanion-ai/feynman) · [Docs](https://www.feynman.is/docs/getting-started/installation)
+- Agente AI open-source para research académico
+- Bundled skills, prompts, y subagentes Pi para investigación
+- Instalación standalone: `curl -fsSL https://feynman.is/install | bash`
+- Skills only (sin terminal): instaladores para Codex y Claude Code
+- Soporte para modelos locales vía Ollama
 
 ---
 
@@ -165,6 +229,14 @@
 
 ## 🖌️ Design Tools
 
+### Agentation
+- 🔗 [GitHub](https://github.com/benjitaylor/agentation)
+- Herramienta de feedback visual para agentes
+- Click elementos en tu página, añade notas, copia output estructurado con selectores CSS
+- Multi-select, selección de área, pausar animaciones
+- Instalación: `npm install agentation` o importar como componente React
+- Agent-agnóstico: funciona con cualquier coding agent
+
 | Herramienta | Descripción | Estado |
 |---|---|---|
 | [Unicorn Studio](https://www.unicorn.studio/) | Similar a Figma | ⚠️ No probado |
@@ -175,6 +247,13 @@
 ---
 
 ## 📐 Templates & Inspiración
+
+### React Bits
+- 🔗 [GitHub](https://github.com/DavidHDev/react-bits) · [Web](https://reactbits.dev/)
+- Colección open-source de componentes React animados, interactivos y customizables
+- Categorías: animaciones de texto, animaciones, componentes y utilidades
+- JavaScript, TypeScript, CSS y Tailwind
+- 500K+ desarrolladores mensuales
 
 | Herramienta | Descripción | Estado |
 |---|---|---|
@@ -236,18 +315,15 @@
 - Herramienta AI para gestión de proyectos y contexto
 - ⚠️ No probado
 
-### Shipper
-- 🔗 [Web](https://www.aura.build/)
-- Herramienta de deployment/shipping
-- ⚠️ Link unclear (shipper.now no funciona)
-
 ---
 
 > **Leyenda:** ✅ Probado · ⚠️ No probado · 💰 De pago
 
 ---
 
-### MCPs clave para estos flujos
+## 📚 Recursos Clave
+
+### MCPs para estos flujos
 
 | MCP | Función |
 |---|---|
