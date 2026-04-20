@@ -55,6 +55,14 @@
 - Marketplace: `/plugin marketplace add wshobson/agents`
 - Colecciones: claude-code-essentials, full-stack-development, security-hardening, data-ml-pipeline, infrastructure-devops
 
+### Pixel Agents
+- 🔗 [GitHub](https://github.com/pablodelucca/pixel-agents) · [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=pablodelucca.pixel-agents)
+- Extensión VS Code que convierte tus agentes Claude Code en personajes pixel art animados en una oficina virtual
+- Cada terminal de Claude Code genera un personaje que camina, se sienta, escribe y reacciona en tiempo real según la actividad del agente
+- Editor de layout de oficina integrado, visualización de sub-agentes, notificaciones sonoras
+- Sigue los archivos JSONL de transcripción de Claude Code sin modificar nada — puramente observacional
+- Requiere Claude Code CLI instalado
+
 ---
 
 ## 🛠️ Claude Code Skills & Plugins
@@ -98,6 +106,55 @@
 - Incluye tips de Boris Cherny (creador de Claude Code)
 - Guías de: Claude Skills, Power-Ups, Settings, Subagents, Commands
 
+### Taste Skill
+- 🔗 [GitHub](https://github.com/Leonxlnx/taste-skill) · [Web](https://tasteskill.dev)
+- Skill de alto impacto para UI: le da "buen gusto" al AI y elimina outputs genéricos y aburridos
+- 7 variantes especializadas: taste-skill, gpt-taste, redesign-skill, soft-skill, output-skill, minimalist-skill, brutalist-skill
+- Sistema de 3 diales configurables: DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY (escala 1-10)
+- Framework-agnostic. Compatible con Cursor, Claude Code, Codex, Windsurf y más
+- Instalación: `npx skills add https://github.com/Leonxlnx/taste-skill`
+
+### Donatello Skill
+- 🔗 [GitHub](https://github.com/Gastonfoncea/Donatello-Skill)
+- Skill para Claude Code que evalúa el **taste visual** de una landing page con una rúbrica opinionada
+- Detecta AI slop, clichés de template y falta de criterio editorial. Devuelve crítica estructurada con síndromes, señales negativas/positivas y fixes sugeridos
+- Responde siempre en castellano, en primera persona, con humor seco. Sin palabras vacías como "moderno" o "limpio"
+- **Requiere pixels**: necesita screenshot o MCP de browser (Playwright) para evaluar — no funciona solo con HTML
+- Instalación: `git clone git@github.com:Gastonfoncea/Donatello.git ~/.claude/skills/donatello`
+
+### Make Interfaces Feel Better
+- 🔗 [GitHub](https://github.com/jakubkrehel/make-interfaces-feel-better) · [Artículo](https://jakub.kr/writing/details-that-make-interfaces-feel-better)
+- Agent skill basado en el artículo "Details that make interfaces feel better" de Jakub Krehel
+- Enseña a los agentes los detalles de diseño que se acumulan en una interfaz excelente: text-wrap balance, border radius concéntrico, animaciones contextual de íconos, font smoothing, números tabulares, animaciones interruptibles, optical alignment, shadows vs borders
+- Compatible con Claude Code, Codex y otros agentes
+- Instalación: `npx skills add jakubkrehel/make-interfaces-feel-better`
+
+### GEO Optimizer Skill
+- 🔗 [GitHub](https://github.com/Auriti-Labs/geo-optimizer-skill) · [Docs](https://auriti-labs.github.io/geo-optimizer-skill/) · [Demo](https://geo-optimizer-web.onrender.com)
+- Toolkit de GEO (Generative Engine Optimization): audita, optimiza y hace visible tu sitio a motores de búsqueda AI (ChatGPT, Perplexity, Claude, Gemini)
+- Basado en investigación de Princeton KDD 2024 y AutoGEO ICLR 2026. Audita contra 47 métodos con score 0-100
+- Genera automáticamente robots.txt, llms.txt, schema JSON-LD y meta tags faltantes
+- MCP server compatible con Claude Code: `claude mcp add geo-optimizer -- geo-mcp`
+- CI/CD integration con GitHub Actions. Output en text, JSON, HTML, SARIF, JUnit
+- Instalación: `pip install geo-optimizer-skill`
+
+### SkillUI
+- 🔗 [Web](https://skillui.vercel.app/) · [GitHub](https://github.com/amaancoderx/npxskillui) · [npm](https://www.npmjs.com/package/skillui)
+- Reverse-engineer cualquier design system apuntando a una URL, repo o carpeta local
+- Extrae colores, fuentes, spacing, componentes, animaciones y scroll journeys empaquetados en un archivo `.skill`
+- Modo default (sin Playwright) y modo ultra (con browser real: screenshots, keyframes, hover states, DOM fingerprinting)
+- Output incluye CLAUDE.md y SKILL.md para que Claude Code los lea automáticamente
+- Sin API keys, sin AI, sin cloud — análisis estático puro
+- Instalación: `npm install -g skillui`
+
+### Skills Desktop
+- 🔗 [GitHub](https://github.com/laststance/skills-desktop) · [Web](https://skills-desktop.vercel.app)
+- App de escritorio (macOS) para visualizar los skills instalados y su estado de symlinks en todos los agentes AI
+- Soporta 21 agentes: Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot, Cline, Windsurf, y más
+- Indicadores visuales de estado: válido (✓), roto (◐), ausente (○). 26 temas de color
+- Auto-update vía GitHub Releases
+- ⚠️ Solo macOS por ahora
+
 ### UI/UX Pro Max Skill
 - 🔗 [GitHub](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
 - Skill para diseño UI/UX: tokens, componentes, paletas, tipografías
@@ -135,6 +192,19 @@
 - Instalación standalone: `curl -fsSL https://feynman.is/install | bash`
 - Skills only (sin terminal): instaladores para Codex y Claude Code
 - Soporte para modelos locales vía Ollama
+
+---
+
+## 🌐 SEO & Data Scraping
+
+### Google Maps Scraper
+- 🔗 [GitHub](https://github.com/gosom/google-maps-scraper)
+- Scraper open-source y gratuito para extraer datos de Google Maps a escala
+- Extrae 33+ campos por lugar: nombre, dirección, teléfono, web, coordenadas, reseñas, emails, horarios, y más
+- Interfaz CLI, Web UI y REST API. ~120 lugares/minuto con `-c 8 -depth 1`
+- Soporta CSV, JSON, PostgreSQL, S3, Kubernetes y plugins custom
+- Exportación directa a LeadsDB (gestión y deduplicación de leads con AI/MCP)
+- Instalación via Docker: `docker run gosom/google-maps-scraper`
 
 ---
 
@@ -228,6 +298,14 @@
 ---
 
 ## 🖌️ Design Tools
+
+### Onlook
+- 🔗 [Web](https://onlook.com/) · [GitHub](https://github.com/onlook-dev/onlook) · [Docs](https://docs.onlook.com)
+- "El Cursor para Diseñadores" — editor de código visual-first open-source para React
+- Permite construir, editar y estilizar apps Next.js + TailwindCSS visualmente, en tiempo real, con AI
+- Edición visual Figma-like directamente en el DOM del browser, con código sincronizado en tiempo real
+- Importa desde Figma o GitHub, genera apps desde texto o imagen, deploya con link compartible
+- Alternativa open-source a Bolt.new, Lovable, V0, Figma Make, Webflow
 
 ### Agentation
 - 🔗 [GitHub](https://github.com/benjitaylor/agentation)
