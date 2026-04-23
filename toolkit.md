@@ -33,7 +33,23 @@
 - Agente autónomo en tu servidor. Recuerda lo que aprende y mejora con el tiempo
 - Sandboxing incluido
 
-### Prompt Master  
+### Manifest
+- 🔗 [GitHub](https://github.com/mnfst/manifest) · [Web](https://manifest.build) · [Docs](https://manifest.build/docs)
+- Smart model router para agentes AI personales (OpenClaw, Hermes, etc.). Se sienta entre tu agente y los providers de LLM
+- Clasifica cada request con un algoritmo de 23 dimensiones (en menos de 2ms) y lo rutea al modelo más barato que puede manejarlo
+- Reduce costos hasta 70%. Fallback automático si un modelo falla. Control de presupuesto incluido
+- Soporta 300+ modelos: OpenAI, Anthropic, Google, DeepSeek, Mistral, Qwen, GitHub Copilot, Ollama y más
+- Compatible con suscripciones existentes (Claude Max, ChatGPT Plus, etc.). Self-hosted vía Docker o cloud
+- Instalación Docker: `bash <(curl -sSL https://raw.githubusercontent.com/mnfst/manifest/main/docker/install.sh)` · 4.4k estrellas
+
+### AutoStream AI Agent
+- 🔗 [GitHub](https://github.com/Kartvaya2008/autostream-ai-agent)
+- Agente conversacional AI full-stack para generación de leads cualificados con RAG, detección de intención y ejecución de tools
+- Detecta cuando el usuario tiene alta intención de conversión, captura sus datos y dispara el workflow de lead capture automáticamente
+- Stack: Python, FastAPI, LangChain, Gemini 1.5 Flash, RAG con knowledge base local JSON
+- ⚠️ No probado
+
+### Prompt Master
 - 🔗 [GitHub](https://github.com/nidhinjs/prompt-master)
 - Creador de prompts optimizados para cualquier herramienta AI
 - ⚠️ No probado
@@ -75,11 +91,11 @@
 - Incluye herramientas para desarrollo SDK, code review automatizado, comandos git, y más
 
 ### Vercel Agent Skills
-- 🔗 [GitHub](https://github.com/vercel-labs/agent-skills) · [Docs](https://vercel.com/docs/agent-resources/skills)
-- Colección oficial de Vercel: React best practices, frontend design, React Native, Vercel AI SDK
+- 🔗 [GitHub](https://github.com/vercel-labs/agent-skills) · [Skills Registry](https://skills.sh/vercel-labs/agent-skills)
+- Colección oficial de Vercel con skills listos para producción: React best practices (40+ reglas), web design guidelines (100+ reglas de accesibilidad, UX y performance), React Native, composition patterns y deploy a Vercel desde el agente
 - Skills CLI (npx skills): gestor de paquetes open-source para el ecosistema de agent skills
 - Instalación: `npx skills add vercel-labs/agent-skills`
-- Compatible con 18+ agentes: Claude Code, GitHub Copilot, Cursor, Cline, etc.
+- Compatible con 18+ agentes: Claude Code, GitHub Copilot, Cursor, Cline, etc. — 22.1k estrellas
 
 ### Claude Code Templates
 - 🔗 [GitHub](https://github.com/davila7/claude-code-templates) · [Web](https://www.aitmpl.com/)
@@ -106,20 +122,57 @@
 - Incluye tips de Boris Cherny (creador de Claude Code)
 - Guías de: Claude Skills, Power-Ups, Settings, Subagents, Commands
 
+### Andrej Karpathy Skills
+- 🔗 [GitHub](https://github.com/forrestchang/andrej-karpathy-skills)
+- Un solo CLAUDE.md que corrige los problemas de LLM coding más críticos, derivado de las observaciones de Andrej Karpathy
+- 4 principios: Think Before Coding (no asumir, surfacear confusión), Simplicity First (mínimo código que resuelve el problema), Surgical Changes (tocar solo lo necesario), Goal-Driven Execution (criterios de éxito verificables en lugar de instrucciones imperativas)
+- La clave: transformar instrucciones imperativas en goals con loops de verificación para que el modelo opere solo
+- Plugin: `/plugin marketplace add forrestchang/andrej-karpathy-skills` — 45.3k estrellas
+
+### Context Mode
+- 🔗 [GitHub](https://github.com/mksglu/context-mode)
+- MCP server + plugin que resuelve los dos problemas del context window: Context Saving (sandboxea tool calls, 315 KB → 5.4 KB) y Session Continuity (indexa todos los eventos en SQLite + FTS5 para que el agente retome exactamente donde estaba al compactar)
+- Benchmarks: Playwright snapshot 56 KB → 299 B (99%), 20 GitHub issues 59 KB → 1.1 KB (98%). Sesión de 30 min se extiende a 3 horas
+- 6 sandbox tools: ctx_batch_execute, ctx_execute, ctx_execute_file, ctx_index, ctx_search, ctx_fetch_and_index
+- Compatible con Claude Code, Gemini CLI, VS Code Copilot, OpenCode y Codex CLI
+- Plugin: `/plugin marketplace add mksglu/context-mode` — 3.1k estrellas
+
+### Dev Browser
+- 🔗 [GitHub](https://github.com/SawyerHood/dev-browser)
+- Plugin de browser automation para Claude Code que le permite controlar tu browser para testear y verificar el trabajo mientras desarrolla
+- Arquitectura stateful: servidor persistente + ejecución agentica de scripts. Más rápido y barato que Playwright MCP (3m53s vs 4m31s, $0.88 vs $1.45 por tarea)
+- Extensión Chrome opcional para usar el browser existente con tus sesiones ya logueadas
+- Plugin: `/plugin marketplace add sawyerhood/dev-browser && /plugin install dev-browser@sawyerhood/dev-browser` — 3.8k estrellas
+
+### AutoBrowse (Browserbase)
+- 🔗 [Skills.sh](https://skills.sh/browserbase/skills/autobrowse) · [GitHub](https://github.com/browserbase/skills)
+- Skill para construir automatizaciones de browser confiables mediante experimentación iterativa
+- Un agente interno navega el sitio, el agente externo lee el trace y mejora strategy.md. Se repite hasta que pasa consistentemente
+- Al graduarse, genera automáticamente un SKILL.md listo para instalar como skill de Claude Code
+- Soporte para browser local y cloud (para sitios con bot-protection)
+- Instalación: `npx skills add https://github.com/browserbase/skills --skill autobrowse`
+
 ### Taste Skill
 - 🔗 [GitHub](https://github.com/Leonxlnx/taste-skill) · [Web](https://tasteskill.dev)
 - Skill de alto impacto para UI: le da "buen gusto" al AI y elimina outputs genéricos y aburridos
 - 7 variantes especializadas: taste-skill, gpt-taste, redesign-skill, soft-skill, output-skill, minimalist-skill, brutalist-skill
 - Sistema de 3 diales configurables: DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY (escala 1-10)
 - Framework-agnostic. Compatible con Cursor, Claude Code, Codex, Windsurf y más
-- Instalación: `npx skills add https://github.com/Leonxlnx/taste-skill`
+- Instalación: `npx skills add https://github.com/Leonxlnx/taste-skill` — 10k estrellas
+
+### Hue
+- 🔗 [GitHub](https://github.com/dominikmartn/hue) · [Web](https://hueapp.io)
+- Skill open-source para Claude Code que aprende cualquier marca desde una URL, nombre o screenshot y la convierte en un design system completo
+- Output: tokens de color, tipografía, spacing, componentes, light + dark mode, hero recipes, selección de icon kit — todo como un SKILL.md instalable
+- Instalación: `git clone https://github.com/dominikmartn/hue ~/.claude/skills/hue`. Activar con: "make a design skill from cursor.com"
+- 17 ejemplos de marcas incluidos en /examples
 
 ### Donatello Skill
 - 🔗 [GitHub](https://github.com/Gastonfoncea/Donatello-Skill)
-- Skill para Claude Code que evalúa el **taste visual** de una landing page con una rúbrica opinionada
+- Skill para Claude Code que evalúa el taste visual de una landing page con una rúbrica opinionada
 - Detecta AI slop, clichés de template y falta de criterio editorial. Devuelve crítica estructurada con síndromes, señales negativas/positivas y fixes sugeridos
 - Responde siempre en castellano, en primera persona, con humor seco. Sin palabras vacías como "moderno" o "limpio"
-- **Requiere pixels**: necesita screenshot o MCP de browser (Playwright) para evaluar — no funciona solo con HTML
+- Requiere pixels: necesita screenshot o MCP de browser (Playwright) para evaluar — no funciona solo con HTML
 - Instalación: `git clone git@github.com:Gastonfoncea/Donatello.git ~/.claude/skills/donatello`
 
 ### Make Interfaces Feel Better
@@ -141,7 +194,7 @@
 ### SkillUI
 - 🔗 [Web](https://skillui.vercel.app/) · [GitHub](https://github.com/amaancoderx/npxskillui) · [npm](https://www.npmjs.com/package/skillui)
 - Reverse-engineer cualquier design system apuntando a una URL, repo o carpeta local
-- Extrae colores, fuentes, spacing, componentes, animaciones y scroll journeys empaquetados en un archivo `.skill`
+- Extrae colores, fuentes, spacing, componentes, animaciones y scroll journeys empaquetados en un archivo .skill
 - Modo default (sin Playwright) y modo ultra (con browser real: screenshots, keyframes, hover states, DOM fingerprinting)
 - Output incluye CLAUDE.md y SKILL.md para que Claude Code los lea automáticamente
 - Sin API keys, sin AI, sin cloud — análisis estático puro
@@ -195,6 +248,17 @@
 
 ---
 
+## 📊 Modelos & Benchmarks
+
+### LLM Stats
+- 🔗 [Web](https://llm-stats.com/) · [Best AI for Coding](https://llm-stats.com/leaderboards/best-ai-for-coding)
+- Hub centralizado de benchmarks de modelos AI: leaderboards por categoría (LLM, imagen, video, audio, embeddings), arenas de votación, comparador de modelos y playground
+- Rankings por código, math, chat, precio, velocidad y contexto. 291+ modelos indexados
+- Benchmarks específicos: GPQA, SWE-bench, MMLU-Pro, LiveCodeBench, HumanEval, AIME 2025, y más
+- Secciones especializadas: Best AI for Coding, Math, Writing, Image Generation
+
+---
+
 ## 🌐 SEO & Data Scraping
 
 ### Google Maps Scraper
@@ -204,7 +268,18 @@
 - Interfaz CLI, Web UI y REST API. ~120 lugares/minuto con `-c 8 -depth 1`
 - Soporta CSV, JSON, PostgreSQL, S3, Kubernetes y plugins custom
 - Exportación directa a LeadsDB (gestión y deduplicación de leads con AI/MCP)
-- Instalación via Docker: `docker run gosom/google-maps-scraper`
+- Instalación via Docker: `docker run gosom/google-maps-scraper` — 3.3k estrellas
+
+---
+
+## 📣 Marketing & Growth
+
+### Okara (AI CMO)
+- 🔗 [Web](https://okara.ai/)
+- AI CMO para founders y equipos pequeños: maneja Reddit, SEO, X (Twitter), LinkedIn, Hacker News, Google Search Console y GA4 en un solo lugar
+- Detecta oportunidades de keywords, sugiere threads de Reddit relevantes, genera borradores de posts para revisar antes de publicar
+- Auditoria de SEO con correcciones concretas. 100K+ usuarios
+- 💰 Desde $99/mes
 
 ---
 
@@ -305,7 +380,7 @@
 - Permite construir, editar y estilizar apps Next.js + TailwindCSS visualmente, en tiempo real, con AI
 - Edición visual Figma-like directamente en el DOM del browser, con código sincronizado en tiempo real
 - Importa desde Figma o GitHub, genera apps desde texto o imagen, deploya con link compartible
-- Alternativa open-source a Bolt.new, Lovable, V0, Figma Make, Webflow
+- Alternativa open-source a Bolt.new, Lovable, V0, Figma Make, Webflow — 25.1k estrellas
 
 ### Agentation
 - 🔗 [GitHub](https://github.com/benjitaylor/agentation)
@@ -325,6 +400,13 @@
 ---
 
 ## 📐 Templates & Inspiración
+
+### shadcn/ui
+- 🔗 [GitHub](https://github.com/shadcn-ui/ui) · [Web](https://ui.shadcn.com)
+- Colección de componentes beautifully designed, accesibles y customizables. No es una librería — es código que copiás y hacés tuyo
+- Funciona con React, Next.js, Laravel, Astro y más. Construido sobre Radix UI + Tailwind CSS
+- Incluye skill oficial para Claude Code en /skills/shadcn
+- 113k estrellas — el estándar de facto para UI en React
 
 ### React Bits
 - 🔗 [GitHub](https://github.com/DavidHDev/react-bits) · [Web](https://reactbits.dev/)
@@ -398,14 +480,3 @@
 > **Leyenda:** ✅ Probado · ⚠️ No probado · 💰 De pago
 
 ---
-
-## 📚 Recursos Clave
-
-### MCPs para estos flujos
-
-| MCP | Función |
-|---|---|
-| Figma MCP | El agente lee el diseño y genera código fiel al layout |
-| Filesystem MCP | Lee/escribe archivos directamente en tu proyecto local |
-| GitHub MCP | Commitea, abre PRs y maneja ramas automáticamente |
-| Browser/Puppeteer MCP | El agente abre el browser, ve la landing renderizada e itera |
